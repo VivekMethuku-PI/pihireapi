@@ -18,7 +18,7 @@ jobs:
       run: |
           git submodule update --init --recursive
 
-      # Optionally, you can pull the latest commit of each submodule
+      # Optionally, you can pull the latest commit of each submodule 
       # before proceeding with the Docker build
     - name: Update submodules to latest commit
       run: |
