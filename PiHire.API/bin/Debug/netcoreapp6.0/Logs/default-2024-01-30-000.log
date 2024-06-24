@@ -1,0 +1,109 @@
+﻿info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-01-30T15:59:05.1346062+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+crit: Microsoft.AspNetCore.Hosting.Diagnostics[6] @ 2024-01-30T15:59:31.4068932+05:30
+      Application startup exception
+System.IO.DirectoryNotFoundException: D:\work\piHIRE\PiHire.o\PiHire.API\Testimonals\
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider..ctor(String root, ExclusionFilters filters)
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider..ctor(String root)
+   at PiHire.API.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ICorsService corsService, ICorsPolicyProvider corsPolicyProvider) in D:\work\piHIRE\PiHire.o\PiHire.API\Startup.cs:line 247
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-01-30T17:57:30.2466318+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-01-30T18:00:03.8385665+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+crit: Microsoft.AspNetCore.Hosting.Diagnostics[6] @ 2024-01-30T18:00:43.8964494+05:30
+      Application startup exception
+System.IO.DirectoryNotFoundException: D:\work\piHIRE\PiHire.o\PiHire.API\Testimonals\
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider..ctor(String root, ExclusionFilters filters)
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider..ctor(String root)
+   at PiHire.API.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ICorsService corsService, ICorsPolicyProvider corsPolicyProvider) in D:\work\piHIRE\PiHire.o\PiHire.API\Startup.cs:line 247
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-01-30T18:04:41.5611828+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+crit: Microsoft.AspNetCore.Hosting.Diagnostics[6] @ 2024-01-30T18:09:35.3699376+05:30
+      Application startup exception
+System.IO.DirectoryNotFoundException: D:\work\piHIRE\PiHire.o\PiHire.API\Testimonals\
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider..ctor(String root, ExclusionFilters filters)
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider..ctor(String root)
+   at PiHire.API.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ICorsService corsService, ICorsPolicyProvider corsPolicyProvider) in D:\work\piHIRE\PiHire.o\PiHire.API\Startup.cs:line 247
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-01-30T18:09:50.0157105+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-01-30T18:11:10.0073510+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-01-30T18:11:12.9471019+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-01-30T18:11:12.9475006+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-01-30T18:11:12.9475226+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:12.9908979+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-01-30T18:11:14.1582282+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:15.9976178+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger - - - 301 - - 3010.5789ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:16.3645981+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:16.6022745+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 237.7363ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:16.7295731+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/swagger-ui-bundle.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:16.7507293+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/swagger-ui.css - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:16.7509185+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:16.7519313+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/swagger-ui-standalone-preset.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:16.7624403+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 11.2309ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[FileServed] @ 2024-01-30T18:11:16.8083923+05:30
+      Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[FileServed] @ 2024-01-30T18:11:16.8084009+05:30
+      Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[FileServed] @ 2024-01-30T18:11:16.8084085+05:30
+      Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:16.8120325+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/swagger-ui.css - - - 200 141855 text/css 60.7493ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:16.8156186+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/swagger-ui-standalone-preset.js - - - 200 310437 application/javascript 64.0986ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:16.8519171+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/swagger-ui-bundle.js - - - 200 1018946 application/javascript 122.9386ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:16.8521831+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:16.9419851+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.8934ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:17.1949854+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-01-30T18:11:17.3237493+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/favicon-32x32.png - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[FileServed] @ 2024-01-30T18:11:17.3252864+05:30
+      Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:17.3255128+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/favicon-32x32.png - - - 200 628 image/png 1.8746ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-01-30T18:11:17.6226263+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 427.5734ms

@@ -1,0 +1,764 @@
+﻿info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-02-01T16:08:20.0155704+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-02-01T16:08:26.2274307+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-02-01T16:08:26.2290488+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-02-01T16:08:26.2290999+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:26.2754751+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-02-01T16:08:28.7774243+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:31.7355557+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 5463.6091ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:32.1172373+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:32.1347720+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 17.7872ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:32.1352145+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:34.9572454+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 2821.9850ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:35.2587082+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:35.9545661+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 695.8658ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:41.9323635+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/user/authenticate - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:41.9378076+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:41.9461180+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/user/authenticate - - - 204 - - 13.6657ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:41.9584992+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/user/authenticate application/json 63
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:41.9797662+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationFailed] @ 2024-02-01T16:08:42.9058449+05:30
+      Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[AuthenticationSchemeNotAuthenticatedWithFailure] @ 2024-02-01T16:08:42.9191951+05:30
+      Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:42.9266230+05:30
+      Executing endpoint 'PiHire.API.Controllers.UserController.authenticate (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:42.9775864+05:30
+      Route matched with {action = "authenticate", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] authenticate(PiHire.BAL.ViewModels.LoginViewModel) on controller PiHire.API.Controllers.UserController (PiHire.API).
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-02-01T16:08:47.0125873+05:30
+      No store type was specified for the decimal property 'MaxSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-02-01T16:08:47.0128609+05:30
+      No store type was specified for the decimal property 'MinSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-02-01T16:08:47.0129223+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-02-01T16:08:47.0129390+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-02-01T16:08:47.0130748+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-02-01T16:08:47.0130947+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:47.9174768+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:52.2966038+05:30
+      Executed DbCommand (145ms) [Parameters=[@__8__locals1_username_0='?' (Size = 100), @__HashPswd_1='?' (Size = 500)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID], [p].[CreatedBy], [p].[CreatedDate], [p].[DOB], [p].[EmailID], [p].[EmailSignature], [p].[EmployID], [p].[FirstName], [p].[LastName], [p].[Location], [p].[LocationID], [p].[MobileNumber], [p].[Nationality], [p].[PasswordHash], [p].[ProfilePhoto], [p].[ShiftId], [p].[Status], [p].[TokenExpiryDate], [p].[UpdatedBy], [p].[UpdatedDate], [p].[UserID], [p].[UserName], [p].[UserRoleId], [p].[UserRoleName], [p].[UserType], [p].[VerifiedFlag], [p].[VerifyToken]
+      FROM [PI_HIRE_USERS] AS [p]
+      WHERE (([p].[UserName] = @__8__locals1_username_0) AND ([p].[PasswordHash] = @__HashPswd_1)) AND ([p].[UserType] <> CAST(5 AS tinyint))
+warn: Microsoft.EntityFrameworkCore.Query[Microsoft.EntityFrameworkCore.Query.MultipleCollectionIncludeWarning] @ 2024-02-01T16:08:52.9214524+05:30
+      Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:52.9962059+05:30
+      Executed DbCommand (41ms) [Parameters=[@__piHireUser_UserId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[ID], [t].[UserName], [t].[MobileNumber], [t].[FirstName], [t].[LastName], [t].[UserType], [t0].[TaskId], [t0].[ModuleId], [t0].[RoleName], [t0].[Permissions], [t0].[ActivityFlag], [t0].[CreatedBy], [t0].[Module], [t0].[ModuleDesc], [t0].[Task], [t0].[TaskDesc], [t0].[TaskCode], [t0].[UpdatedDate], [t0].[TaskPermissions], [t0].[ID], [t0].[ID0], [t0].[ID1], [t0].[ID2], [t0].[ID3], [t1].[BuId], [t1].[PuId], [t1].[BuName], [t1].[PuName], [t1].[CountryId], [t1].[ID], [t1].[ID0], [t1].[ID1]
+      FROM (
+          SELECT TOP(1) [p].[ID], [p].[UserName], [p].[MobileNumber], [p].[FirstName], [p].[LastName], [p].[UserType]
+          FROM [PI_HIRE_USERS] AS [p]
+          WHERE ([p].[Status] = CAST(1 AS tinyint)) AND ([p].[UserID] = @__piHireUser_UserId_0)
+      ) AS [t]
+      LEFT JOIN (
+          SELECT CAST([p0].[TaskID] AS int) AS [TaskId], CAST([p0].[ModuleID] AS int) AS [ModuleId], [p2].[RoleName], [p0].[Permissions], [p4].[ActivityFlag], N'' AS [CreatedBy], [p3].[ModuleName] AS [Module], [p3].[ModuleDesc], [p4].[TaskName] AS [Task], [p4].[TaskDesc], [p4].[TaskCode], [p1].[UpdatedDate], (
+              SELECT TOP(1) [p5].[Permissions]
+              FROM [PI_APP_USER_ROLE_RESP] AS [p5]
+              WHERE (([p5].[ModuleID] = [p0].[ModuleID]) AND ([p5].[TaskID] = [p0].[TaskID])) AND ([p5].[RoleID] = [p1].[AppRoleID])) AS [TaskPermissions], [p0].[ID], [p1].[ID] AS [ID0], [p2].[ID] AS [ID1], [p3].[ID] AS [ID2], [p4].[ID] AS [ID3], [p0].[AppUserID]
+          FROM [PI_APP_USER_RESP] AS [p0]
+          INNER JOIN [PI_APP_USER_ROLE_MAP] AS [p1] ON [p0].[AppUserID] = [p1].[AppUserID]
+          INNER JOIN [PI_APP_USER_ROLES] AS [p2] ON [p1].[AppRoleID] = [p2].[ID]
+          INNER JOIN [PI_APP_MODULES_S] AS [p3] ON [p0].[ModuleID] = [p3].[ID]
+          INNER JOIN [PI_APP_TASKS_S] AS [p4] ON [p0].[TaskID] = [p4].[ID]
+          WHERE (([p0].[ApplicationID] = 2) AND ([p0].[Status] = CAST(1 AS tinyint))) AND ([p4].[Status] = CAST(1 AS tinyint))
+      ) AS [t0] ON [t].[ID] = [t0].[AppUserID]
+      LEFT JOIN (
+          SELECT [p6].[BusinessUnit] AS [BuId], [p6].[ProcessUnit] AS [PuId], [t3].[bus_unit_full_name] AS [BuName], [t2].[pu_name] AS [PuName], [t2].[country] AS [CountryId], [p6].[ID], [t2].[ID] AS [ID0], [t3].[ID] AS [ID1], [p6].[AppUserID]
+          FROM [PI_APP_USER_PU_BU] AS [p6]
+          INNER JOIN [tbl_param_process_unit_master] AS [t2] ON [p6].[ProcessUnit] = [t2].[ID]
+          INNER JOIN [tbl_param_pu_business_units] AS [t3] ON [p6].[BusinessUnit] = [t3].[ID]
+          WHERE [p6].[Status] <> CAST(5 AS tinyint)
+      ) AS [t1] ON [t].[ID] = [t1].[AppUserID]
+      ORDER BY [t].[ID], [t0].[UpdatedDate] DESC, [t0].[ID], [t0].[ID0], [t0].[ID1], [t0].[ID2], [t0].[ID3], [t1].[ID], [t1].[ID0]
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:53.4839499+05:30
+      Executed DbCommand (92ms) [Parameters=[@UserId='?'], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_GetConnectionsId] @UserId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:53.5760094+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.UserAuthorizationViewModel'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:53.6487724+05:30
+      Executed action PiHire.API.Controllers.UserController.authenticate (PiHire.API) in 10658.1633ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:53.6518222+05:30
+      Executed endpoint 'PiHire.API.Controllers.UserController.authenticate (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:53.6809972+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/user/authenticate application/json 63 - 200 1606 application/json;+charset=utf-8 11722.4734ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:53.7456250+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/outlook/token - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:53.7470382+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:53.7479027+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/outlook/token - - - 204 - - 2.2511ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.6901241+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/ChatComunication/GetUnreadCount - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.7521168+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetAuditList - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.7259841+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/User/GetUsersbyType - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.7032763+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/notification - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.7595417+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Common/outlook/token - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.7969750+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.7969747+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/notification/negotiate?negotiateVersion=1 - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.7969753+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.7971794+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.7975089+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/User/GetUsersbyType - - - 204 - - 72.2760ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.7975100+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/notification/negotiate?negotiateVersion=1 - - - 204 - - 0.6175ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.7975100+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/notification - - - 204 - - 94.2805ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8025442+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/notification/negotiate?negotiateVersion=1 - 0
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8025617+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8026392+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8026676+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.8029122+05:30
+      Executing endpoint '/notification/negotiate'
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8146055+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8268197+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/ChatComunication/GetUnreadCount - - - 204 - - 136.7428ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8270312+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Leave - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8272448+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8277042+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Leave - - - 204 - - 0.6402ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8321455+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/HireAdmin - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8458307+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8482917+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/HireAdmin - - - 204 - - 16.1215ms
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8531918+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8532338+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8532338+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8535193+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8536942+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetAuditList - - - 204 - - 102.3104ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8537286+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - - - 204 - - 51.1712ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8537530+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - - - 204 - - 51.0752ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8538782+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8539400+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8540983+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - - - 204 - - 0.2221ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8595550+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/leave - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8635101+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/Active - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8781150+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/JobStatus - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8892576+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8893442+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8944828+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8946049+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/JobStatus - - - 204 - - 16.4742ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.8947932+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/User/GetUsersbyType application/json 26
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8949367+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/Active - - - 204 - - 31.4301ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.8953109+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/leave - - - 204 - - 35.7741ms
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.8956042+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.9070564+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/ChatComunication/GetUnreadCount - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.9070594+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Leave - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.9076327+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.9099900+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.9101053+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.9104176+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/Common/GetPU - - - 204 - - 0.4305ms
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.9198844+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.9204703+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/HireAdmin application/json 29
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.9206385+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.9208190+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/notification - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.9208963+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:54.9364339+05:30
+      Executed endpoint '/notification/negotiate'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:54.9366157+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/notification/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 134.0798ms
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:54.9474832+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:54.9475034+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:54.9475076+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:54.9474964+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:54.9475519+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:54.9476171+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:54.9487987+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/notification?id=USe1HpRLc5udlheHjLChdw - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:54.9490296+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.9491179+05:30
+      Executing endpoint '/notification'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.9502029+05:30
+      Executing endpoint 'PiHire.API.Controllers.NotificationController.GetAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:54.9637646+05:30
+      Route matched with {action = "Get", controller = "Notification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAsync() on controller PiHire.API.Controllers.NotificationController (PiHire.API).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.9675053+05:30
+      Executing endpoint 'PiHire.API.Controllers.ChatComunicationController.GetUnreadCount (PiHire.API)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.9675040+05:30
+      Executing endpoint 'PiHire.API.Controllers.CommonController.GetOutlookTokenAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.9675113+05:30
+      Executing endpoint 'PiHire.API.Controllers.UserController.GetUserDetails (PiHire.API)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.9675036+05:30
+      Executing endpoint 'PiHire.API.Controllers.ReportController.GetDashboardHireAdminAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:54.9675450+05:30
+      Executing endpoint 'PiHire.API.Controllers.LeaveController.GetLeavesAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:54.9731584+05:30
+      Route matched with {action = "GetUnreadCount", controller = "ChatComunication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadCount() on controller PiHire.API.Controllers.ChatComunicationController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:54.9732188+05:30
+      Route matched with {action = "GetOutlookToken", controller = "Common"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOutlookTokenAsync() on controller PiHire.API.Controllers.CommonController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:54.9747038+05:30
+      Route matched with {action = "GetUserDetails", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserDetails(PiHire.BAL.ViewModels.UsersbyTypeRequestModel) on controller PiHire.API.Controllers.UserController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:54.9760640+05:30
+      Route matched with {action = "GetDashboardHireAdmin", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardHireAdminAsync(PiHire.BAL.ViewModels.DashboardCandidateInterviewFilterViewModel) on controller PiHire.API.Controllers.ReportController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:54.9863697+05:30
+      Route matched with {action = "GetLeaves", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeavesAsync() on controller PiHire.API.Controllers.LeaveController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.0840150+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.0841137+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+dbug: PiHire.BAL.Repositories.CommonRepository[1001] @ 2024-02-01T16:08:55.1264560+05:30
+      PiHire.BAL.Repositories.CommonRepository/<GetOutlookTokenAsync>d__27:Start of method:, ReferenceId:d3ef5ee5-63c2-4c9d-bff1-f1d13f555536
+dbug: PiHire.BAL.Repositories.WorkSheduleRepository[1001] @ 2024-02-01T16:08:55.1264559+05:30
+      PiHire.BAL.Repositories.WorkSheduleRepository/<GetLeaves>d__3:Start of method:, ReferenceId:5d3b31bd-76e5-430f-92e9-79ee566c512a
+dbug: PiHire.BAL.Repositories.CompanyRepository[1001] @ 2024-02-01T16:08:55.1264820+05:30
+      PiHire.BAL.Repositories.UserRespository/<GetUsersbyType>d__16:Start of method:, ReferenceId:1c4211eb-7c20-4dfb-a0d8-15d86e678bae
+dbug: PiHire.BAL.Repositories.ReportRepository[1001] @ 2024-02-01T16:08:55.1345697+05:30
+      PiHire.BAL.Repositories.ReportRepository/<GetDashboardHireAdminAsync>d__9:Start of method: filterViewModel->{"PuIds":null,"BuIds":null,"PerPage":0,"CurrentPage":0}, ReferenceId:97d3d8e5-302d-4a6e-bea2-22351d4c523a
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.1764453+05:30
+      Executed DbCommand (28ms) [Parameters=[@__Usr_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID] AS [Id], [p].[JOID] AS [JobId], [p].[NotesDesc] AS [NoteDesc], [p].[Title], [p0].[NotiStatus], [p1].[ProfilePhoto] AS [Photo], [p1].[UserType], [p1].[EmailID] AS [EmailId], [p].[CreatedBy], [p].[CreatedDate], [p1].[FirstName], [p1].[LastName]
+      FROM [PH_NOTIFICATIONS] AS [p]
+      INNER JOIN [PH_NOTIFICATIONS_USERS] AS [p0] ON [p].[ID] = [p0].[NotIID]
+      INNER JOIN [PI_HIRE_USERS] AS [p1] ON [p].[CreatedBy] = [p1].[ID]
+      WHERE (([p0].[PushTo] = @__Usr_Id_0) AND ([p0].[Status] = CAST(1 AS tinyint))) AND ([p].[Status] = CAST(1 AS tinyint))
+      ORDER BY [p].[CreatedDate] DESC
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.2474195+05:30
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.UserNotificationsViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.2827435+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.2828350+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.2827455+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.2827469+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.3332375+05:30
+      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_GetUsers]
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.3677700+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.UsersViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.3815980+05:30
+      Executed action PiHire.API.Controllers.NotificationController.GetAsync (PiHire.API) in 417.7025ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.3818499+05:30
+      Executed endpoint 'PiHire.API.Controllers.NotificationController.GetAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.3822709+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/notification - - - 200 40877 application/json;+charset=utf-8 461.4356ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.3840643+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/Common/GetAuditList application/json 60
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.3846420+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.3850177+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.3865037+05:30
+      Executing endpoint 'PiHire.API.Controllers.CommonController.GetAuditListAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.3876509+05:30
+      Executed action PiHire.API.Controllers.UserController.GetUserDetails (PiHire.API) in 412.8264ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.3877207+05:30
+      Executed endpoint 'PiHire.API.Controllers.UserController.GetUserDetails (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.3903483+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/User/GetUsersbyType application/json 26 - 200 199 application/json;+charset=utf-8 495.5255ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.3909835+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.3911332+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.3914890+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.3917043+05:30
+      Executing endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.3923270+05:30
+      Executed DbCommand (28ms) [Parameters=[@__UserId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[UserName], [p].[PasswordHash]
+      FROM [PH_USERS_CONFIG] AS [p]
+      WHERE ([p].[UserId] = @__UserId_0) AND ([p].[VerifyFlag] = CAST(1 AS bit))
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.4008330+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.4008428+05:30
+      Route matched with {action = "GetAuditList", controller = "Common"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuditListAsync(PiHire.BAL.ViewModels.AuditListSearchViewModel) on controller PiHire.API.Controllers.CommonController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.4008607+05:30
+      Route matched with {action = "GetPU", controller = "Common"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPU() on controller PiHire.API.Controllers.CommonController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.4046863+05:30
+      Executed action PiHire.API.Controllers.CommonController.GetOutlookTokenAsync (PiHire.API) in 431.3577ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.4047358+05:30
+      Executed endpoint 'PiHire.API.Controllers.CommonController.GetOutlookTokenAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.4049687+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Common/outlook/token - - - 200 319 application/json;+charset=utf-8 645.8761ms
+dbug: PiHire.BAL.Repositories.CommonRepository[1001] @ 2024-02-01T16:08:55.4068156+05:30
+      PiHire.BAL.Repositories.CommonRepository/<GetPUAsync>d__4:Start of method:, ReferenceId:6179d975-5731-4db5-a653-36172763c940
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.4083679+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/JobStatus application/json 51
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.4085520+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.4089515+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.4090849+05:30
+      Executing endpoint 'PiHire.API.Controllers.ReportController.GetDashboardJobStageAsync (PiHire.API)'
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.4102375+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+dbug: PiHire.BAL.Repositories.CommonRepository[1001] @ 2024-02-01T16:08:55.4168627+05:30
+      PiHire.BAL.Repositories.CommonRepository/<GetAuditList>d__30:Start of method:, ReferenceId:126aa2fc-93b8-4333-b36d-7f44182f6179
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.4209896+05:30
+      Route matched with {action = "GetDashboardJobStage", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardJobStageAsync(PiHire.BAL.ViewModels.DashboardCandidateInterviewFilterViewModel) on controller PiHire.API.Controllers.ReportController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.4354146+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+dbug: PiHire.BAL.Repositories.ReportRepository[1001] @ 2024-02-01T16:08:55.4478635+05:30
+      PiHire.BAL.Repositories.ReportRepository/<GetDashboardJobStageAsync>d__4:Start of method: filterViewModel->{"PuIds":[],"BuIds":[],"PerPage":0,"CurrentPage":1}, ReferenceId:19695f1d-f4db-4670-acdc-c6bc4516cd36
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.4510249+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.4517175+05:30
+      Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_ProcessUnits]
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.4547368+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.GetPUViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.4772973+05:30
+      Executed action PiHire.API.Controllers.CommonController.GetPU (PiHire.API) in 76.2214ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.4774088+05:30
+      Executed endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.4784074+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - - - 200 1292 application/json;+charset=utf-8 87.5117ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.4825923+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/leave application/json 29
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.4842774+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.4846405+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.4847990+05:30
+      Executing endpoint 'PiHire.API.Controllers.ReportController.GetDashboardRecruiterStatusLeaveAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.4907159+05:30
+      Route matched with {action = "GetDashboardRecruiterStatusLeave", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardRecruiterStatusLeaveAsync(PiHire.BAL.ViewModels.DashboardFilterViewModel) on controller PiHire.API.Controllers.ReportController (PiHire.API).
+dbug: PiHire.BAL.Repositories.ReportRepository[1001] @ 2024-02-01T16:08:55.5342066+05:30
+      PiHire.BAL.Repositories.ReportRepository/<GetDashboardRecruiterStatusAsync>d__8:Start of method: filterViewModel->{}, ReferenceId:3e4d07d8-a5fe-461a-bbc6-a4f8d36a5522
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.5369813+05:30
+      Executed DbCommand (51ms) [Parameters=[@fmDt='?', @toDt='?', @puIds='?', @buIds='?', @currentDt='?' (DbType = DateTime), @userType='?' (DbType = Int32), @userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Dashboard_HireAdmin]	@fmDt,	@toDt, @puIds,	@buIds,	@currentDt,	@userType,	@userId
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.5372494+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.5827527+05:30
+      Executed DbCommand (35ms) [Parameters=[@currentDt='?' (DbType = DateTime), @fmDt='?' (DbType = DateTime), @toDt='?' (DbType = DateTime), @onLeave='?' (DbType = Boolean), @userType='?' (DbType = Int32), @userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Dashboard_RecruiterStatus]	@currentDt,	@fmDt,	@toDt,	@onLeave,	@userType,	@userId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.6008649+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[PiHire.DAL.Models.AuditModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.6140104+05:30
+      Executed action PiHire.API.Controllers.CommonController.GetAuditListAsync (PiHire.API) in 213.0481ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.6140988+05:30
+      Executed endpoint 'PiHire.API.Controllers.CommonController.GetAuditListAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.6144383+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/Common/GetAuditList application/json 60 - 200 1217 application/json;+charset=utf-8 230.3569ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.6168790+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/Active application/json 29
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.6170837+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.6174138+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.6176925+05:30
+      Executing endpoint 'PiHire.API.Controllers.ReportController.GetDashboardRecruiterStatusActiveAsync (PiHire.API)'
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.6259402+05:30
+      Executed DbCommand (32ms) [Parameters=[@__Usr_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[JOID] AS [JobId], [p].[ChatRoomID] AS [RoomId], COUNT(*) AS [Count], MAX([p].[CreatedDate]) AS [LatestMessageDt]
+      FROM [PH_CHAT_MESSAGES] AS [p]
+      INNER JOIN (
+          SELECT [p0].[ID], [p0].[JOID]
+          FROM [PH_CHAT_ROOMS] AS [p0]
+          WHERE [p0].[Status] = CAST(1 AS tinyint)
+      ) AS [t] ON [p].[ChatRoomID] = [t].[ID]
+      WHERE ([p].[ReceiverID] = @__Usr_Id_0) AND ([p].[ReadStatus] = CAST(0 AS tinyint))
+      GROUP BY [p].[ChatRoomID], [t].[JOID]
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.6260311+05:30
+      Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ApprovedBy], [p].[LeaveType], [p].[EmpID] AS [EmpId], [p].[ApprovedDate], [p].[ApproveRemarks], [p].[RejectRemarks], [p].[CancelDate], [p].[CancelRemarks], [p].[CreatedBy], [p].[CreatedDate], [p].[ID] AS [Id], [p].[LeaveEndDate], [p].[LeaveReason], [p].[LeaveStartDate], [p].[RejectedDate], [p].[Status], N'' AS [LeaveTypeName]
+      FROM [PH_EMP_LEAVE_REQUEST] AS [p]
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.6303415+05:30
+      Route matched with {action = "GetDashboardRecruiterStatusActive", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardRecruiterStatusActiveAsync(PiHire.BAL.ViewModels.DashboardFilterViewModel) on controller PiHire.API.Controllers.ReportController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.6343175+05:30
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.GetUnreadCountViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+dbug: PiHire.BAL.Repositories.ReportRepository[1001] @ 2024-02-01T16:08:55.6348364+05:30
+      PiHire.BAL.Repositories.ReportRepository/<GetDashboardRecruiterStatusAsync>d__8:Start of method: filterViewModel->{}, ReferenceId:dd96f84b-1233-43b9-b550-c07201b17d87
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.6354991+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.6432264+05:30
+      Executed action PiHire.API.Controllers.ChatComunicationController.GetUnreadCount (PiHire.API) in 669.1195ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.6459298+05:30
+      Executed endpoint 'PiHire.API.Controllers.ChatComunicationController.GetUnreadCount (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.6465265+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/ChatComunication/GetUnreadCount - - - 200 2 application/json;+charset=utf-8 739.4505ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.6468913+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.6470604+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.6474140+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.6475721+05:30
+      Executing endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.6478594+05:30
+      Route matched with {action = "GetPU", controller = "Common"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPU() on controller PiHire.API.Controllers.CommonController (PiHire.API).
+dbug: PiHire.BAL.Repositories.CommonRepository[1001] @ 2024-02-01T16:08:55.6519754+05:30
+      PiHire.BAL.Repositories.CommonRepository/<GetPUAsync>d__4:Start of method:, ReferenceId:dc4a5bdb-c657-42b3-aab4-296d06b69227
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.6528849+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.6769868+05:30
+      Executed DbCommand (41ms) [Parameters=[@currentDt='?' (DbType = DateTime), @fmDt='?' (DbType = DateTime), @toDt='?' (DbType = DateTime), @onLeave='?' (DbType = Boolean), @userType='?' (DbType = Int32), @userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Dashboard_RecruiterStatus]	@currentDt,	@fmDt,	@toDt,	@onLeave,	@userType,	@userId
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.6844866+05:30
+      Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_ProcessUnits]
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.6850417+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.GetPUViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.6880520+05:30
+      Executed action PiHire.API.Controllers.CommonController.GetPU (PiHire.API) in 39.9557ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.6882127+05:30
+      Executed endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.6885998+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - - - 200 1292 application/json;+charset=utf-8 41.6890ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.6906392+05:30
+      Request starting HTTP/1.1 OPTIONS http://localhost:64821/api/v1/user/updatetxnlog - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.6908167+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.6912352+05:30
+      Request finished HTTP/1.1 OPTIONS http://localhost:64821/api/v1/user/updatetxnlog - - - 204 - - 0.6039ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.6977823+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.6980140+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.6985380+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.6987138+05:30
+      Executing endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.6988543+05:30
+      Route matched with {action = "GetPU", controller = "Common"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPU() on controller PiHire.API.Controllers.CommonController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.7022368+05:30
+      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID], [p].[CreatedBy], [p].[CreatedDate], [p].[DOB], [p].[EmailID], [p].[EmailSignature], [p].[EmployID], [p].[FirstName], [p].[LastName], [p].[Location], [p].[LocationID], [p].[MobileNumber], [p].[Nationality], [p].[PasswordHash], [p].[ProfilePhoto], [p].[ShiftId], [p].[Status], [p].[TokenExpiryDate], [p].[UpdatedBy], [p].[UpdatedDate], [p].[UserID], [p].[UserName], [p].[UserRoleId], [p].[UserRoleName], [p].[UserType], [p].[VerifiedFlag], [p].[VerifyToken]
+      FROM [PI_HIRE_USERS] AS [p]
+      WHERE [p].[UserType] <> CAST(5 AS tinyint)
+dbug: PiHire.BAL.Repositories.CommonRepository[1001] @ 2024-02-01T16:08:55.7031701+05:30
+      PiHire.BAL.Repositories.CommonRepository/<GetPUAsync>d__4:Start of method:, ReferenceId:84f83d88-9f1d-4e0e-8825-75e5b8158e10
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.7060674+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.7426829+05:30
+      Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_ProcessUnits]
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.7431769+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.GetPUViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.7452313+05:30
+      Executed action PiHire.API.Controllers.CommonController.GetPU (PiHire.API) in 46.1231ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.7454278+05:30
+      Executed endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.7463771+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - - - 200 1292 application/json;+charset=utf-8 48.5532ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.7504048+05:30
+      Request starting HTTP/1.1 POST http://localhost:64821/api/v1/user/updatetxnlog application/json 135
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.7504175+05:30
+      Executed DbCommand (36ms) [Parameters=[@currentDt='?' (DbType = DateTime), @fmDt='?' (DbType = DateTime), @toDt='?', @onLeave='?', @userType='?' (DbType = Int32), @userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Dashboard_RecruiterStatus]	@currentDt,	@fmDt,	@toDt,	@onLeave,	@userType,	@userId
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.7506458+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.7516568+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.7518931+05:30
+      Executing endpoint 'PiHire.API.Controllers.UserController.UpdateLoginTxnLog (PiHire.API)'
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.7558354+05:30
+      Executed DbCommand (41ms) [Parameters=[@puIds='?', @buIds='?', @fetchCount='?' (DbType = Int32), @offsetCount='?' (DbType = Int32), @userType='?' (DbType = Int32), @userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Dashboard_JobStage] @puIds,	@buIds,	@fetchCount, @offsetCount, @userType, @userId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.7603061+05:30
+      Route matched with {action = "UpdateLoginTxnLog", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateLoginTxnLog(PiHire.BAL.ViewModels.UpdateLogsViewModel) on controller PiHire.API.Controllers.UserController (PiHire.API).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.7650093+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[PiHire.BAL.ViewModels.DashboardHireAdminViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.7725731+05:30
+      Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID], [p].[CreatedBy], [p].[CreatedDate], [p].[GroupID], [p].[RMDesc], [p].[RMType], [p].[RMValue], [p].[Status], [p].[UpdatedBy], [p].[UpdatedDate]
+      FROM [PH_REF_MASTER_S] AS [p]
+      WHERE [p].[GroupID] = 98
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.7948107+05:30
+      Executed action PiHire.API.Controllers.ReportController.GetDashboardHireAdminAsync (PiHire.API) in 818.5843ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.7949278+05:30
+      Executed endpoint 'PiHire.API.Controllers.ReportController.GetDashboardHireAdminAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.7951730+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/HireAdmin application/json 29 - 200 710 application/json;+charset=utf-8 874.8714ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-02-01T16:08:55.7981858+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[PolicySuccess] @ 2024-02-01T16:08:55.7984090+05:30
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-02-01T16:08:55.7989086+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-02-01T16:08:55.7991190+05:30
+      Executing endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-02-01T16:08:55.7992674+05:30
+      Route matched with {action = "GetPU", controller = "Common"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPU() on controller PiHire.API.Controllers.CommonController (PiHire.API).
+dbug: PiHire.BAL.Repositories.CommonRepository[1001] @ 2024-02-01T16:08:55.8022683+05:30
+      PiHire.BAL.Repositories.CommonRepository/<GetPUAsync>d__4:Start of method:, ReferenceId:4072dd25-d169-4f11-ad8d-38828658c7a6
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.8029798+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.8046749+05:30
+      Executed DbCommand (35ms) [Parameters=[@puIds='?', @buIds='?', @userType='?' (DbType = Int32), @userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Dashboard_JobStageCount] @puIds,	@buIds,	@userType, @userId
+info: Microsoft.EntityFrameworkCore.Infrastructure[Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] @ 2024-02-01T16:08:55.8144827+05:30
+      Entity Framework Core 6.0.0 initialized 'PiHIRE2Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.8321998+05:30
+      Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_ProcessUnits]
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.8327074+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.GetPUViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.8344905+05:30
+      Executed action PiHire.API.Controllers.CommonController.GetPU (PiHire.API) in 35.1232ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.8347730+05:30
+      Executed endpoint 'PiHire.API.Controllers.CommonController.GetPU (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.8352845+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Common/GetPU - - - 200 1292 application/json;+charset=utf-8 37.0979ms
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.8726357+05:30
+      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID], [p].[ColorCode], [p].[CreatedBy], [p].[CreatedDate], [p].[StageDesc], [p].[Status], [p].[Title], [p].[UpdatedBy], [p].[UpdatedDate]
+      FROM [PH_CAND_STAGES_S] AS [p]
+      WHERE [p].[Status] <> CAST(5 AS tinyint)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:55.8840100+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.LeavesViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.9048656+05:30
+      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[id], [p].[curr_symbol], [p].[currency], [p].[iso], [p].[iso3], [p].[name], [p].[nicename], [p].[numcode], [p].[phonecode]
+      FROM [PH_COUNTRY] AS [p]
+      WHERE 0 = 1
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.9060908+05:30
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[id], [p].[curr_symbol], [p].[currency], [p].[iso], [p].[iso3], [p].[name], [p].[nicename], [p].[numcode], [p].[phonecode]
+      FROM [PH_COUNTRY] AS [p]
+      WHERE [p].[id] IN (4, 225, 100, 175, 3, 244, 5, 6, 7)
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.9196411+05:30
+      Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID], [p].[CandStatusID], [p].[Counter], [p].[JOID], [p].[StageID], [p].[Status], [p].[UpdatedBy], [p].[UpdatedDate]
+      FROM [PH_JOB_OPENING_STATUS_COUNTER] AS [p]
+      WHERE [p].[JOID] IN (307, 305, 304, 303, 302, 298, 297, 296, 295, 294, 293, 292, 291, 290, 289, 288, 287, 286, 285, 284, 283, 282, 281, 280, 279, 278, 277, 276, 275, 272, 271, 270, 265, 264, 263, 261, 260, 259, 258, 257, 256, 254, 253, 252, 251, 250, 249, 248, 246, 244, 242, 240, 239, 238, 234, 232, 230, 228, 224, 215, 213, 212, 210, 209) AND ([p].[Status] <> CAST(5 AS tinyint))
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:55.9347508+05:30
+      Executed action PiHire.API.Controllers.LeaveController.GetLeavesAsync (PiHire.API) in 948.2817ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:55.9348628+05:30
+      Executed endpoint 'PiHire.API.Controllers.LeaveController.GetLeavesAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:55.9380282+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Leave - - - 200 8393 application/json;+charset=utf-8 1030.9352ms
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.9738074+05:30
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[id], [p].[country], [p].[country_id], [p].[iso2], [p].[iso3], [p].[name]
+      FROM [PH_CITY] AS [p]
+      WHERE 0 = 1
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.9738179+05:30
+      Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[id], [p].[country], [p].[country_id], [p].[iso2], [p].[iso3], [p].[name]
+      FROM [PH_CITY] AS [p]
+      WHERE [p].[id] IN (105, 6234, 3100, 4770, 6233, 53, 34, 111, 45, 3101, 112, 106, 46, 113, 132, 3110)
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:55.9850335+05:30
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID], [p].[CreatedBy], [p].[CreatedDate], [p].[DOB], [p].[EmailID], [p].[EmailSignature], [p].[EmployID], [p].[FirstName], [p].[LastName], [p].[Location], [p].[LocationID], [p].[MobileNumber], [p].[Nationality], [p].[PasswordHash], [p].[ProfilePhoto], [p].[ShiftId], [p].[Status], [p].[TokenExpiryDate], [p].[UpdatedBy], [p].[UpdatedDate], [p].[UserID], [p].[UserName], [p].[UserRoleId], [p].[UserRoleName], [p].[UserType], [p].[VerifiedFlag], [p].[VerifyToken]
+      FROM [PI_HIRE_USERS] AS [p]
+      WHERE [p].[ID] IN (10, 372, 371, 373, 370)
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.0481513+05:30
+      Executed DbCommand (75ms) [Parameters=[@__model_SessionId_0='?' (Size = 200), @__model_UserId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID], [p].[ApplicationID], [p].[DeviceType], [p].[DeviceUID], [p].[IPAddress], [p].[Lat], [p].[Long], [p].[SessionID], [p].[Status], [p].[TxnDesc], [p].[TxnOutDate], [p].[TxnStartDate], [p].[UserID]
+      FROM [PI_USER_TXN_LOG] AS [p]
+      WHERE (((([p].[ApplicationID] = 2) AND ([p].[SessionID] = @__model_SessionId_0)) AND ([p].[UserID] = @__model_UserId_1)) AND ([p].[Status] = 1)) AND [p].[TxnOutDate] IS NULL
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.0484762+05:30
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[id], [p].[curr_symbol], [p].[currency], [p].[iso], [p].[iso3], [p].[name], [p].[nicename], [p].[numcode], [p].[phonecode]
+      FROM [PH_COUNTRY] AS [p]
+      WHERE [p].[id] IN (4, 100, 14, 225, 244, 175, 3, 5, 6, 7)
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.0837040+05:30
+      Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[id], [p].[country], [p].[country_id], [p].[iso2], [p].[iso3], [p].[name]
+      FROM [PH_CITY] AS [p]
+      WHERE [p].[id] IN (105, 3100, 458, 6234, 34, 3103, 4770, 6233, 45, 111, 53, 46, 106, 112, 3101, 113, 132, 3110)
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.0939033+05:30
+      Executed DbCommand (32ms) [Parameters=[@__CurrentTime_0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[EmpID]
+      FROM [PH_EMP_LEAVE_REQUEST] AS [p]
+      WHERE (([p].[Status] = CAST(2 AS tinyint)) AND ([p].[LeaveStartDate] <= @__CurrentTime_0)) AND (@__CurrentTime_0 <= [p].[LeaveEndDate])
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.0939041+05:30
+      Executed DbCommand (33ms) [Parameters=[@__CurrentTime_0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[EmpID]
+      FROM [PH_EMP_LEAVE_REQUEST] AS [p]
+      WHERE (([p].[Status] = CAST(2 AS tinyint)) AND ([p].[LeaveStartDate] <= @__CurrentTime_0)) AND (@__CurrentTime_0 <= [p].[LeaveEndDate])
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.1653807+05:30
+      Executed DbCommand (30ms) [Parameters=[@__8__locals1_onLeave_1='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID]
+      FROM [PI_HIRE_USERS] AS [p]
+      WHERE (([p].[Status] = CAST(1 AS tinyint)) AND ([p].[UserType] = CAST(4 AS tinyint))) AND (@__8__locals1_onLeave_1 = CAST(0 AS bit))
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.1653808+05:30
+      Executed DbCommand (38ms) [Parameters=[@__8__locals1_onLeave_1='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID]
+      FROM [PI_HIRE_USERS] AS [p]
+      WHERE (([p].[Status] = CAST(1 AS tinyint)) AND ([p].[UserType] = CAST(4 AS tinyint))) AND (@__8__locals1_onLeave_1 = CAST(0 AS bit))
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.1849989+05:30
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID] AS [Id], [p].[Title], [p].[JSCode] AS [Jscode]
+      FROM [PH_JOB_STATUS_S] AS [p]
+      WHERE CAST([p].[ID] AS int) IN (2, 9, 13, 6, 4, 5)
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.2138112+05:30
+      Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[FirstName], [p].[LastName], [p].[ID] AS [Id], [p].[UserRoleName], [p].[Location], [p].[ProfilePhoto]
+      FROM [PI_HIRE_USERS] AS [p]
+      WHERE 0 = 1
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.2142869+05:30
+      Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[FirstName], [p].[LastName], [p].[ID] AS [Id], [p].[UserRoleName], [p].[Location], [p].[ProfilePhoto]
+      FROM [PI_HIRE_USERS] AS [p]
+      WHERE [p].[ID] IN (374, 375, 376, 378, 379)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:56.2205487+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[PiHire.BAL.ViewModels.DashboardJobStageViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.2624602+05:30
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [v].[UserId], [v].[ProcessUnit]
+      FROM [vwUserPuBu] AS [v]
+      WHERE 0 = 1
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.2625169+05:30
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [v].[UserId], [v].[ProcessUnit]
+      FROM [vwUserPuBu] AS [v]
+      WHERE [v].[UserId] IN (374, 375, 376, 378, 379)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:56.2761594+05:30
+      Executed action PiHire.API.Controllers.ReportController.GetDashboardJobStageAsync (PiHire.API) in 855.0608ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:56.2762857+05:30
+      Executed endpoint 'PiHire.API.Controllers.ReportController.GetDashboardJobStageAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:56.2769733+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/JobStatus application/json 51 - 200 58988 application/json;+charset=utf-8 868.5462ms
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.3120801+05:30
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT DISTINCT [p].[AssignedTo], [p].[JOID] AS [Joid]
+      FROM [PH_JOB_ASSIGNMENTS] AS [p]
+      WHERE ([p].[DeassignDate] IS NULL AND [p].[AssignedTo] IN (374, 375, 376, 378, 379)) AND ([p].[Status] <> CAST(5 AS tinyint))
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.3289853+05:30
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT DISTINCT [p].[AssignedTo], [p].[JOID] AS [Joid]
+      FROM [PH_JOB_ASSIGNMENTS] AS [p]
+      WHERE 0 = 1
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.4080807+05:30
+      Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID]
+      FROM [PH_JOB_STATUS_S] AS [p]
+      WHERE ([p].[JSCode] = N'CLS') AND ([p].[Status] <> CAST(5 AS tinyint))
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.4080806+05:30
+      Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID]
+      FROM [PH_JOB_STATUS_S] AS [p]
+      WHERE ([p].[JSCode] = N'CLS') AND ([p].[Status] <> CAST(5 AS tinyint))
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.4806073+05:30
+      Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID]
+      FROM [PH_JOB_OPENINGS] AS [p]
+      WHERE 0 = 1
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.4806476+05:30
+      Executed DbCommand (54ms) [Parameters=[@__jobStatusClosedId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ID]
+      FROM [PH_JOB_OPENINGS] AS [p]
+      WHERE [p].[ID] IN (210, 212, 213, 215, 227, 228, 230, 232, 234, 238, 239, 240, 242, 244, 246, 249, 250, 251, 253, 256, 258, 259, 260, 263, 264, 265, 279, 280, 287, 288, 289, 292, 295, 296, 209, 210, 212, 227, 228, 230, 232, 234, 238, 239, 242, 244, 246, 249, 250, 251, 253, 256, 258, 260, 263, 264, 265, 271, 272, 281, 287, 288, 290, 291, 292, 295, 296, 212, 227, 228, 230, 232, 246, 252, 253, 257, 258, 261, 264, 265, 276, 277, 278, 282, 284, 285, 289, 292, 213, 230, 240, 254, 283, 286, 296, 303, 304, 305, 307, 215, 224, 248, 252, 253, 258, 259, 261, 264, 270, 271, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 289, 290, 291, 292, 296) AND ([p].[JobOpeningStatus] = @__jobStatusClosedId_1)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:56.4866473+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[PiHire.BAL.ViewModels.DashboardRecruiterStatusViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:56.4964876+05:30
+      Executed action PiHire.API.Controllers.ReportController.GetDashboardRecruiterStatusLeaveAsync (PiHire.API) in 1005.6277ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:56.4966389+05:30
+      Executed endpoint 'PiHire.API.Controllers.ReportController.GetDashboardRecruiterStatusLeaveAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:56.4969476+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/leave application/json 29 - 200 229 application/json;+charset=utf-8 1014.3661ms
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:56.5152673+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[PiHire.BAL.ViewModels.DashboardRecruiterStatusViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:56.5386977+05:30
+      Executed action PiHire.API.Controllers.ReportController.GetDashboardRecruiterStatusActiveAsync (PiHire.API) in 908.24ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:56.5387836+05:30
+      Executed endpoint 'PiHire.API.Controllers.ReportController.GetDashboardRecruiterStatusActiveAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:56.5394607+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/Report/Dashboard/RecruiterStatus/Active application/json 29 - 200 29893 application/json;+charset=utf-8 922.5542ms
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.8168789+05:30
+      Executed DbCommand (40ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1) (DbType = Byte), @p2='?' (Size = 100), @p3='?' (Size = 50), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 200), @p7='?' (DbType = Int32), @p8='?' (Size = 1000), @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime), @p11='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [PI_USER_TXN_LOG] ([ApplicationID], [DeviceType], [DeviceUID], [IPAddress], [Lat], [Long], [SessionID], [Status], [TxnDesc], [TxnOutDate], [TxnStartDate], [UserID])
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+      SELECT [ID]
+      FROM [PI_USER_TXN_LOG]
+      WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:56.9620555+05:30
+      Executed DbCommand (30ms) [Parameters=[@__model_UserId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID], [p].[ApplicationID], [p].[LastTxnID], [p].[LoginStatus], [p].[UserID]
+      FROM [PI_USER_LOG] AS [p]
+      WHERE ([p].[ApplicationID] = 2) AND ([p].[UserID] = @__model_UserId_0)
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-02-01T16:08:57.1431565+05:30
+      Executed DbCommand (35ms) [Parameters=[@p1='?' (DbType = Int64), @p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [PI_USER_LOG] SET [LastTxnID] = @p0
+      WHERE [ID] = @p1;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-02-01T16:08:57.2084468+05:30
+      Executing OkObjectResult, writing value of type 'System.ValueTuple`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-02-01T16:08:57.2161600+05:30
+      Executed action PiHire.API.Controllers.UserController.UpdateLoginTxnLog (PiHire.API) in 1455.6625ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:08:57.2162565+05:30
+      Executed endpoint 'PiHire.API.Controllers.UserController.UpdateLoginTxnLog (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:08:57.2164598+05:30
+      Request finished HTTP/1.1 POST http://localhost:64821/api/v1/user/updatetxnlog application/json 135 - 200 50 application/json;+charset=utf-8 1466.0913ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-02-01T16:09:05.6906213+05:30
+      Executed endpoint '/notification'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-02-01T16:09:05.6915656+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/notification?id=USe1HpRLc5udlheHjLChdw - - - 101 - - 10742.6104ms

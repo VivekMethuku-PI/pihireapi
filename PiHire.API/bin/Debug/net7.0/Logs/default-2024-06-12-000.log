@@ -1,0 +1,118 @@
+﻿info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-06-12T11:50:37.5544115+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-12T11:50:42.1463297+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-12T11:50:42.1471196+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-12T11:50:42.1472099+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:50:42.2417732+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:50:42.2418404+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-06-12T11:50:42.2712415+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-12T11:50:43.9448624+05:30
+      Executing endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-12T11:50:43.9776487+05:30
+      Route matched with {action = "CandidateAssessments", controller = "Candidate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CandidateAssessmentsAsync(Int32, Int32) on controller PiHire.API.Controllers.CandidateController (PiHire.API).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:50:44.6768114+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 2438.0852ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:50:44.7110876+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:50:44.7129721+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:50:44.7221758+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 10.6570ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:50:44.8798594+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 166.8070ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:50:44.9614005+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:50:45.3815952+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 420.1486ms
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6083395+05:30
+      No store type was specified for the decimal property 'MaxSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6103756+05:30
+      No store type was specified for the decimal property 'MinSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6108384+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6111252+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6117392+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6121519+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6127105+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-12T11:50:55.6130539+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-12T11:51:00.9152189+05:30
+      Executed DbCommand (227ms) [Parameters=[@__JobId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID], [p].[BroughtBy], [p].[ClientID], [p].[ClientName], [p].[ClosedDate], [p].[CountryID], [p].[CreatedBy], [p].[CreatedByName], [p].[CreatedDate], [p].[ExpeInMonths], [p].[ExpeInMonthsPrefTyp], [p].[ExpeInYears], [p].[JobCategory], [p].[JobCategoryId], [p].[JobDescription], [p].[JobLocationID], [p].[JobLocationLocal], [p].[JobOpeningStatus], [p].[JobRole], [p].[JobTitle], [p].[KeyRequirements], [p].[MaxExpeInMonths], [p].[MaxReleventExpInMonths], [p].[MinExpeInMonths], [p].[MinReleventExpInMonths], [p].[NoOfPositions], [p].[PostedDate], [p].[Priority], [p].[ReleventExpInMonthsPrefTyp], [p].[Remarks], [p].[ReopenedDate], [p].[ShortJobDesc], [p].[Status], [p].[UpdatedBy], [p].[UpdatedDate]
+      FROM [PH_JOB_OPENINGS] AS [p]
+      WHERE [p].[ID] = @__JobId_0
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-12T11:51:00.9645361+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.CandidateAssessmentViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-12T11:51:00.9930654+05:30
+      Executed action PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API) in 17011.8149ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-12T11:51:00.9933918+05:30
+      Executed endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:51:01.0028618+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - - - 200 277 application/json;+charset=utf-8 18765.0032ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:51:06.2950465+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-12T11:51:06.3247228+05:30
+      Executing endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-12T11:51:06.3262093+05:30
+      Route matched with {action = "CandidateAssessments", controller = "Candidate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CandidateAssessmentsAsync(Int32, Int32) on controller PiHire.API.Controllers.CandidateController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-12T11:51:06.8495470+05:30
+      Executed DbCommand (101ms) [Parameters=[@__JobId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID], [p].[BroughtBy], [p].[ClientID], [p].[ClientName], [p].[ClosedDate], [p].[CountryID], [p].[CreatedBy], [p].[CreatedByName], [p].[CreatedDate], [p].[ExpeInMonths], [p].[ExpeInMonthsPrefTyp], [p].[ExpeInYears], [p].[JobCategory], [p].[JobCategoryId], [p].[JobDescription], [p].[JobLocationID], [p].[JobLocationLocal], [p].[JobOpeningStatus], [p].[JobRole], [p].[JobTitle], [p].[KeyRequirements], [p].[MaxExpeInMonths], [p].[MaxReleventExpInMonths], [p].[MinExpeInMonths], [p].[MinReleventExpInMonths], [p].[NoOfPositions], [p].[PostedDate], [p].[Priority], [p].[ReleventExpInMonthsPrefTyp], [p].[Remarks], [p].[ReopenedDate], [p].[ShortJobDesc], [p].[Status], [p].[UpdatedBy], [p].[UpdatedDate]
+      FROM [PH_JOB_OPENINGS] AS [p]
+      WHERE [p].[ID] = @__JobId_0
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-12T11:51:06.8519564+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.CandidateAssessmentViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-12T11:51:06.8549402+05:30
+      Executed action PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API) in 510.1405ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-12T11:51:06.8550780+05:30
+      Executed endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:51:06.8559182+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - - - 200 277 application/json;+charset=utf-8 560.8393ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:52:12.6933650+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-12T11:52:12.7087067+05:30
+      Executing endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-12T11:52:12.7089755+05:30
+      Route matched with {action = "CandidateAssessments", controller = "Candidate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CandidateAssessmentsAsync(Int32, Int32) on controller PiHire.API.Controllers.CandidateController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-12T11:52:13.4580806+05:30
+      Executed DbCommand (119ms) [Parameters=[@__JobId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID], [p].[BroughtBy], [p].[ClientID], [p].[ClientName], [p].[ClosedDate], [p].[CountryID], [p].[CreatedBy], [p].[CreatedByName], [p].[CreatedDate], [p].[ExpeInMonths], [p].[ExpeInMonthsPrefTyp], [p].[ExpeInYears], [p].[JobCategory], [p].[JobCategoryId], [p].[JobDescription], [p].[JobLocationID], [p].[JobLocationLocal], [p].[JobOpeningStatus], [p].[JobRole], [p].[JobTitle], [p].[KeyRequirements], [p].[MaxExpeInMonths], [p].[MaxReleventExpInMonths], [p].[MinExpeInMonths], [p].[MinReleventExpInMonths], [p].[NoOfPositions], [p].[PostedDate], [p].[Priority], [p].[ReleventExpInMonthsPrefTyp], [p].[Remarks], [p].[ReopenedDate], [p].[ShortJobDesc], [p].[Status], [p].[UpdatedBy], [p].[UpdatedDate]
+      FROM [PH_JOB_OPENINGS] AS [p]
+      WHERE [p].[ID] = @__JobId_0
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-12T11:52:13.4611050+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.CandidateAssessmentViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-12T11:52:13.4678656+05:30
+      Executed action PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API) in 758.7721ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-12T11:52:13.4680033+05:30
+      Executed endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:52:13.4683779+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - - - 200 277 application/json;+charset=utf-8 778.7542ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-12T11:52:45.5631523+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-12T11:52:45.7245609+05:30
+      Executing endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-12T11:52:45.7662753+05:30
+      Route matched with {action = "CandidateAssessments", controller = "Candidate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CandidateAssessmentsAsync(Int32, Int32) on controller PiHire.API.Controllers.CandidateController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-12T11:52:47.0800840+05:30
+      Executed DbCommand (148ms) [Parameters=[@__JobId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[ID], [p].[BroughtBy], [p].[ClientID], [p].[ClientName], [p].[ClosedDate], [p].[CountryID], [p].[CreatedBy], [p].[CreatedByName], [p].[CreatedDate], [p].[ExpeInMonths], [p].[ExpeInMonthsPrefTyp], [p].[ExpeInYears], [p].[JobCategory], [p].[JobCategoryId], [p].[JobDescription], [p].[JobLocationID], [p].[JobLocationLocal], [p].[JobOpeningStatus], [p].[JobRole], [p].[JobTitle], [p].[KeyRequirements], [p].[MaxExpeInMonths], [p].[MaxReleventExpInMonths], [p].[MinExpeInMonths], [p].[MinReleventExpInMonths], [p].[NoOfPositions], [p].[PostedDate], [p].[Priority], [p].[ReleventExpInMonthsPrefTyp], [p].[Remarks], [p].[ReopenedDate], [p].[ShortJobDesc], [p].[Status], [p].[UpdatedBy], [p].[UpdatedDate]
+      FROM [PH_JOB_OPENINGS] AS [p]
+      WHERE [p].[ID] = @__JobId_0
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-12T11:52:47.0843657+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.CandidateAssessmentViewModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-12T11:52:47.1040700+05:30
+      Executed action PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API) in 1337.1743ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-12T11:52:47.1041958+05:30
+      Executed endpoint 'PiHire.API.Controllers.CandidateController.CandidateAssessmentsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-12T11:52:47.1057410+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Candidate/GetCandidate/Assessments/141/423 - - - 200 277 application/json;+charset=utf-8 1550.3160ms

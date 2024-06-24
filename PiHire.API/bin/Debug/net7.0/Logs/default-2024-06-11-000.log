@@ -1,0 +1,314 @@
+﻿info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-06-11T15:38:14.5934869+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T15:38:17.7588045+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T15:38:17.7598958+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T15:38:17.7599444+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T15:38:17.8480119+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-06-11T15:38:18.3652652+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T15:38:20.1544997+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 2307.0123ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T15:38:20.1894858+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T15:38:20.1895834+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T15:38:20.2075155+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 17.5391ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T15:38:20.3032989+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 113.9645ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T15:38:20.3930473+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T15:38:20.7976590+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 404.4050ms
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-06-11T19:43:10.7687875+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:43:16.6684833+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:43:16.6691657+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:43:16.6692438+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:43:16.7795554+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-06-11T19:43:17.4043982+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:43:19.5959853+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 2820.7548ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:43:19.6702915+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:43:19.6891670+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:43:19.6908506+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 20.0982ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:43:19.8801959+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 190.9525ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:43:19.9938415+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:43:20.9809146+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 986.7692ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:43:53.8949422+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:43:53.9260617+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:43:53.9839609+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4919716+05:30
+      No store type was specified for the decimal property 'MaxSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4934178+05:30
+      No store type was specified for the decimal property 'MinSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4937062+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4939101+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4943441+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4945863+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4948017+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:44:07.4950311+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:44:13.9171572+05:30
+      Executed DbCommand (156ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:44:13.9603821+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:44:14.3439531+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 20353.9195ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:44:14.3451099+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:44:14.3541217+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 - - - 200 199 application/json;+charset=utf-8 20459.3268ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:45:29.6422714+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:45:29.9194781+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:45:29.9471078+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:45:30.7978964+05:30
+      Executed DbCommand (56ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:45:30.8211455+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:45:30.8548788+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 900.8899ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:45:30.8549942+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:45:30.8565938+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 200 199 application/json;+charset=utf-8 1234.6693ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:45:39.9897678+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:45:39.9905356+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:45:39.9907201+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:45:40.0614272+05:30
+      Executed DbCommand (36ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:45:40.0621181+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:45:40.0655736+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 74.7607ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:45:40.0659074+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:45:40.0662781+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 200 199 application/json;+charset=utf-8 80.6212ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:45:43.0959345+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:45:43.0964813+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:45:43.0966564+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:45:43.1486588+05:30
+      Executed DbCommand (37ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:45:43.1492266+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:45:43.1536601+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 56.9305ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:45:43.1537386+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:45:43.1540463+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 200 199 application/json;+charset=utf-8 58.1060ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:46:29.5543632+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:46:29.5547774+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:46:29.5548888+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:46:29.6056667+05:30
+      Executed DbCommand (38ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:46:29.6062408+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:46:29.6181915+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 63.2184ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:46:29.6182576+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:46:29.6216819+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 200 199 application/json;+charset=utf-8 65.7634ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:47:40.9948587+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:47:40.9956913+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:47:40.9959536+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:47:41.0701941+05:30
+      Executed DbCommand (29ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:47:41.0715630+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:47:41.0736775+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 77.5535ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:47:41.0737596+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:47:41.0758082+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 200 199 application/json;+charset=utf-8 81.8757ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:47:51.5121676+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:47:51.5130709+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:47:51.5132551+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:47:52.0144849+05:30
+      Executed DbCommand (496ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:47:52.0652687+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:47:52.1880484+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 674.7133ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:47:52.1881065+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:47:52.2425933+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 - - - 200 199 application/json;+charset=utf-8 676.5158ms
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-06-11T19:48:29.0533695+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:48:32.4139289+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:48:32.4150438+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:48:32.4151325+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:48:32.5693119+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:48:32.5693118+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-06-11T19:48:32.6219810+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:48:33.6603809+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:48:33.7588265+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:48:34.4441452+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 1880.1982ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:11.1552001+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:11.1551960+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:11.2187937+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 64.4179ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:11.3622076+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 209.6002ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:11.8339558+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:12.5647072+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 730.7278ms
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5924339+05:30
+      No store type was specified for the decimal property 'MaxSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5940661+05:30
+      No store type was specified for the decimal property 'MinSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5943724+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5945861+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5952983+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5955174+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5957261+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-11T19:49:15.5960684+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:49:20.0960448+05:30
+      Executed DbCommand (170ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:49:20.2003898+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:49:20.4757560+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 46705.062ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:49:20.4778701+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:20.4945164+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 200 199 application/json;+charset=utf-8 47934.7280ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:34.1824068+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-11T19:49:34.1895828+05:30
+      Executing endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-11T19:49:34.1952435+05:30
+      Route matched with {action = "GetCompanyLocations", controller = "CompanyLocations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyLocationsAsync(Int32) on controller PiHire.API.Controllers.CompanyLocationsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-11T19:49:51.4604552+05:30
+      Executed DbCommand (29ms) [Parameters=[@cId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      EXEC [dbo].[Sp_Company_Locations] @cId
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-11T19:49:51.4634977+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.DAL.Models.PuLocationViewModel, PiHire.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-11T19:49:51.4750471+05:30
+      Executed action PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API) in 17278.6738ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-11T19:49:51.4766921+05:30
+      Executed endpoint 'PiHire.API.Controllers.CompanyLocationsController.GetCompanyLocationsAsync (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:51.4775428+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 200 199 application/json;+charset=utf-8 17295.1774ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:52.5362466+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:52.6473325+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 110.8827ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:52.7541031+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:52.7543603+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:52.7605393+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 6.0924ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:52.8142922+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.1576ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:49:52.9460215+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:49:53.1566557+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 210.6815ms
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-06-11T19:50:29.6488016+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:50:36.5243491+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:50:36.5249848+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-11T19:50:36.5250476+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:50:36.5898322+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-06-11T19:50:37.0591732+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:50:37.3743755+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[UserAuthorizationFailed] @ 2024-06-11T19:50:37.5762540+05:30
+      Authorization failed. These requirements were not met:
+      DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[AuthenticationSchemeChallenged] @ 2024-06-11T19:50:37.5924492+05:30
+      AuthenticationScheme: Bearer was challenged.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:50:37.6647622+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/CompanyLocations?Id=21 application/json 127 - 401 - - 288.0286ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:50:37.8902425+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 1307.6978ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:50:38.7678717+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:50:38.7775432+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 10.0603ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:50:38.8296313+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:50:38.9378925+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 108.1943ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-11T19:50:39.5707897+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-11T19:50:40.1636063+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 592.7522ms

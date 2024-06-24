@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiHire.DAL", "PiHire.DAL\PiHire.DAL.csproj", "{991A2A4B-17B7-43FE-993E-76ABA01079C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiHire.BAL", "PiHire.BAL\PiHire.BAL.csproj", "{333576D5-49D2-4188-B7D8-CFC61D9037C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiHire.Utilities", "PiHire.Utilities\PiHire.Utilities.csproj", "{CB44296C-1816-4AF2-B221-F42767C3AB26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiHire", "PiHire\PiHire.csproj", "{4AEDCF5A-6F3D-4FC2-89B9-132667DC4CFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiHire.API", "PiHire.API\PiHire.API.csproj", "{0B7A3A5D-368A-407E-AADD-0345D1003842}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiHire.CareerPortal", "PiHire.CareerPortal\PiHire.CareerPortal.csproj", "{4CEB87A8-AAA8-47B9-A1BA-3C5124802EEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiHire.WS", "PiHire.WS\PiHire.WS.csproj", "{3FA9B37F-DB99-4D0B-9DF3-68CB257913BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{991A2A4B-17B7-43FE-993E-76ABA01079C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991A2A4B-17B7-43FE-993E-76ABA01079C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991A2A4B-17B7-43FE-993E-76ABA01079C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991A2A4B-17B7-43FE-993E-76ABA01079C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333576D5-49D2-4188-B7D8-CFC61D9037C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333576D5-49D2-4188-B7D8-CFC61D9037C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333576D5-49D2-4188-B7D8-CFC61D9037C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333576D5-49D2-4188-B7D8-CFC61D9037C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB44296C-1816-4AF2-B221-F42767C3AB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB44296C-1816-4AF2-B221-F42767C3AB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB44296C-1816-4AF2-B221-F42767C3AB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB44296C-1816-4AF2-B221-F42767C3AB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AEDCF5A-6F3D-4FC2-89B9-132667DC4CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AEDCF5A-6F3D-4FC2-89B9-132667DC4CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AEDCF5A-6F3D-4FC2-89B9-132667DC4CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AEDCF5A-6F3D-4FC2-89B9-132667DC4CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B7A3A5D-368A-407E-AADD-0345D1003842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7A3A5D-368A-407E-AADD-0345D1003842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7A3A5D-368A-407E-AADD-0345D1003842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7A3A5D-368A-407E-AADD-0345D1003842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CEB87A8-AAA8-47B9-A1BA-3C5124802EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CEB87A8-AAA8-47B9-A1BA-3C5124802EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CEB87A8-AAA8-47B9-A1BA-3C5124802EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CEB87A8-AAA8-47B9-A1BA-3C5124802EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA9B37F-DB99-4D0B-9DF3-68CB257913BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA9B37F-DB99-4D0B-9DF3-68CB257913BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA9B37F-DB99-4D0B-9DF3-68CB257913BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA9B37F-DB99-4D0B-9DF3-68CB257913BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99B64876-5C6D-4FE4-93DE-0D751180AD41}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://paraminfoprojects.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PiHire.DAL\\PiHire.DAL.csproj
+		SccProjectName1 = PiHire.DAL
+		SccLocalPath1 = PiHire.DAL
+		SccProjectUniqueName2 = PiHire.BAL\\PiHire.BAL.csproj
+		SccProjectName2 = PiHire.BAL
+		SccLocalPath2 = PiHire.BAL
+		SccProjectUniqueName3 = PiHire.Utilities\\PiHire.Utilities.csproj
+		SccProjectName3 = PiHire.Utilities
+		SccLocalPath3 = PiHire.Utilities
+		SccProjectUniqueName4 = PiHire\\PiHire.csproj
+		SccProjectName4 = PiHire
+		SccLocalPath4 = PiHire
+		SccProjectUniqueName5 = PiHire.API\\PiHire.API.csproj
+		SccProjectName5 = PiHire.API
+		SccLocalPath5 = PiHire.API
+		SccProjectUniqueName6 = PiHire.CareerPortal\\PiHire.CareerPortal.csproj
+		SccProjectName6 = PiHire.CareerPortal
+		SccLocalPath6 = PiHire.CareerPortal
+		SccProjectUniqueName7 = PiHire.WS\\PiHire.WS.csproj
+		SccProjectName7 = PiHire.WS
+		SccLocalPath7 = PiHire.WS
+	EndGlobalSection
+EndGlobal

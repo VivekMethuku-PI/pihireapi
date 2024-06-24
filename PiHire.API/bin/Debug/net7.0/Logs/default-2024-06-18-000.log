@@ -1,0 +1,109 @@
+﻿info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-06-18T15:16:57.2781747+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-18T15:17:07.3847148+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-18T15:17:07.3870999+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-18T15:17:07.3872786+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:17:07.6406254+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-06-18T15:17:08.7238239+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:17:13.9244415+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 6288.5581ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:17:14.4369937+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:17:14.4723834+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 34.1542ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:17:14.5369022+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:17:16.4089285+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1872.0076ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:17:17.4025735+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:17:17.7790833+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 376.5854ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:20:43.6759737+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:20:43.9539642+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 292.3807ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:20:43.9919899+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:20:43.9920188+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:20:44.0124617+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 5.0386ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:20:44.0444632+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.3082ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:20:44.0852231+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:20:44.6464136+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 561.1675ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:21:00.1813713+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Blogs - -
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[UserAuthorizationFailed] @ 2024-06-18T15:21:00.2542262+05:30
+      Authorization failed. These requirements were not met:
+      DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[AuthenticationSchemeChallenged] @ 2024-06-18T15:21:00.2651089+05:30
+      AuthenticationScheme: Bearer was challenged.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:21:00.2792640+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Blogs - - - 401 - - 97.7901ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:21:22.0571301+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Blogs - -
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-06-18T15:21:24.5318442+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-18T15:21:24.6472333+05:30
+      Executing endpoint 'PiHire.API.Controllers.BlogsController.BlogsList (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-18T15:21:24.8088203+05:30
+      Route matched with {action = "BlogsList", controller = "Blogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BlogsList() on controller PiHire.API.Controllers.BlogsController (PiHire.API).
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.6947352+05:30
+      No store type was specified for the decimal property 'MaxSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.6959141+05:30
+      No store type was specified for the decimal property 'MinSalary' on entity type 'CandidateActiveJobModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.6961580+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.6982606+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'CandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.6988056+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.6995265+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesBasedOnProfileStatusViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.6998295+05:30
+      No store type was specified for the decimal property 'Evaluation' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning] @ 2024-06-18T15:21:34.7002152+05:30
+      No store type was specified for the decimal property 'SelfRating' on entity type 'JobCandidatesViewModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-18T15:21:40.4533681+05:30
+      Executed DbCommand (158ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[AuthorName], [p].[BlogShortDesc], [p].[BlogDesc], [p].[BlogPic], [p].[CreatedDate], [p].[Title], [p].[Status], [p].[Tags], [p].[ID] AS [Id]
+      FROM [PH_BLOGS] AS [p]
+      WHERE [p].[Status] <> CAST(5 AS tinyint)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-18T15:21:40.6392550+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.BlogsModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-18T15:21:40.8039545+05:30
+      Executed action PiHire.API.Controllers.BlogsController.BlogsList (PiHire.API) in 15985.2086ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-18T15:21:40.8054669+05:30
+      Executed endpoint 'PiHire.API.Controllers.BlogsController.BlogsList (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:21:40.8227061+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Blogs - - - 200 139909 application/json;+charset=utf-8 18765.5162ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-18T15:22:10.2027056+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/Blogs - -
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[TokenValidationSucceeded] @ 2024-06-18T15:22:10.2063036+05:30
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutingEndpoint] @ 2024-06-18T15:22:10.2216954+05:30
+      Executing endpoint 'PiHire.API.Controllers.BlogsController.BlogsList (PiHire.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ControllerActionExecuting] @ 2024-06-18T15:22:10.2224016+05:30
+      Route matched with {action = "BlogsList", controller = "Blogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BlogsList() on controller PiHire.API.Controllers.BlogsController (PiHire.API).
+info: Microsoft.EntityFrameworkCore.Database.Command[Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] @ 2024-06-18T15:22:10.3076920+05:30
+      Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[AuthorName], [p].[BlogShortDesc], [p].[BlogDesc], [p].[BlogPic], [p].[CreatedDate], [p].[Title], [p].[Status], [p].[Tags], [p].[ID] AS [Id]
+      FROM [PH_BLOGS] AS [p]
+      WHERE [p].[Status] <> CAST(5 AS tinyint)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[ObjectResultExecuting] @ 2024-06-18T15:22:10.4303142+05:30
+      Executing OkObjectResult, writing value of type 'PiHire.BAL.ViewModels.ApiBaseModels.GetResponseViewModel`1[[System.Collections.Generic.List`1[[PiHire.BAL.ViewModels.BlogsModel, PiHire.BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[ActionExecuted] @ 2024-06-18T15:22:10.4763255+05:30
+      Executed action PiHire.API.Controllers.BlogsController.BlogsList (PiHire.API) in 253.805ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[ExecutedEndpoint] @ 2024-06-18T15:22:10.4764253+05:30
+      Executed endpoint 'PiHire.API.Controllers.BlogsController.BlogsList (PiHire.API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-18T15:22:10.4784072+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/Blogs - - - 200 139909 application/json;+charset=utf-8 275.6634ms

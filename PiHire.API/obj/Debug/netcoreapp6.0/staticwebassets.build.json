@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hVeEODpoXdHIOvnswcWZ2w0sTxdhvkYer7sWNCYiXsA=",
+  "Source": "PiHire.API",
+  "BasePath": "_content/PiHire.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

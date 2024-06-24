@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Open Sans', sans-serif;
+            src: local('Open Sans'), local('Open Sans'), url('http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            text-align: left;
+        }
+
+        .main {
+            margin: 22px auto;
+            width: 100%;
+        }
+
+        table {
+            margin: 30px 0;
+        }
+
+        .logo-holder {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .label {
+            font-weight: 600;
+        }
+
+        .heading {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .c0 {
+            margin: auto;
+            padding: 0;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .c1 {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+            margin: auto;
+        }
+
+        .c2 {
+            text-align: center;
+            color: #fff;
+            background: #808080;
+            font-size: 16px;
+            height: 45px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .c3 {
+            text-align: left;
+            color: #333;
+            background: #f1f3f6;
+            font-size: 14px;
+            height: 35px;
+            padding-left: 15px;
+        }
+
+        .c4 {
+            text-align: right;
+            color: #333;
+            font-size: 14px;
+            padding-left: 15px;
+        }
+
+        .c5 {
+            text-align: right;
+            float: right;
+            padding-right: 7px;
+        }
+
+        .c5 {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 1px;
+        }
+
+        .c6 {
+            text-align: center;
+            color: #333;
+            background: #f1f3f6;
+            font-size: 14px;
+            height: 35px;
+            padding-left: 15px;
+        }
+
+        .c7 {
+            height: 30px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+        }
+
+        .c8 {
+            width: 20%;
+            padding-left: 7px;
+        }
+
+        .c9 {
+            text-align: center;
+            color: #333;
+            background: #f1f3f6;
+            font-size: 14px;
+            height: 35px;
+            padding-left: 15px;
+        }
+
+        .c10 {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 1px;
+        }
+
+        .c11 {
+            border-collapse: collapse;
+            width: 100%;
+            page-break-before: always;
+            border: 1px solid #ccc;
+        }
+
+        .education {
+            border-collapse: collapse;
+            width: 100%;
+            page-break-before: always;
+            border: 1px solid #ccc;
+            border-bottom: 0;
+            border-right: 0;
+        }
+
+            .education td {
+                border-right: 1px solid #ccc;
+                padding: 3px;
+                font-size: 8pt;
+            }
+
+                .education td:not(:last-child) {
+                    border-bottom: 1px solid #ccc;
+                }
+
+        .employee {
+            border-collapse: collapse;
+            width: 100%;
+            /* page-break-before: always;*/
+            border: 1px solid #ccc;
+            margin: 30px 0;
+            border-bottom: 0;
+            border-right: 0;
+        }
+
+            .employee td {
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                padding: 6px;
+                font-size: 8pt;
+            }
+
+        .table-title {
+            font-weight: 600;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 3px;
+            font-size: 8pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <table class="c0" style="margin-top:50px;">
+            <tr>
+                <td>
+                    <table class="c1">
+                        <tr>
+                            <td colspan="2" class="c2">
+                                Pre-Employment Form
+                            </td>
+                        </tr>
+                        <tr class="c3">
+                            <td style="padding-left: 7px;padding-bottom: 0px;">
+                                !CandidateProfId &nbsp;!CandidateName
+                            </td>
+                            <td class="c4" style="padding-right: 7px;padding-bottom: 0px;">!BGVSummitedon</td>
+                        </tr>
+                    </table>
+
+                    <table class="c5">
+                        <tbody>
+                            <tr class="c3">
+                                <td colspan="6" class="c6 heading">
+                                    Personal Details
+                                </td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Consultant Name</td>
+                                <td>:</td>
+                                <td style="width:28%;">!CandidateName</td>
+                                <td class=" label" style="width:20%;">OtherName</td>
+                                <td>:</td>
+                                <td style="width:28%;">!otherName</td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Father's Name</td>
+                                <td>:</td>
+                                <td>!fatherName</td>
+                                <td class=" label">Mother Name</td>
+                                <td>:</td>
+                                <td>!motherName</td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Place of Birth</td>
+                                <td>:</td>
+                                <td>!placeOfBirth</td>
+                                <td class=" label">Date of Birth </td>
+                                <td>:</td>
+                                <td>!dateOfBirth</td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Gender</td>
+                                <td>:</td>
+                                <td>!gender</td>
+                                <td class=" label">Marital Staus </td>
+                                <td>:</td>
+                                <td>!maritalStatus</td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Spouse Name</td>
+                                <td>:</td>
+                                <td>!spouseName</td>
+                                <td class=" label">Email</td>
+                                <td>:</td>
+                                <td>!emailAddress</td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Blood Group</td>
+                                <td>:</td>
+                                <td>!bloodGroupName</td>
+                                <td class=" label">Nationality</td>
+                                <td>:</td>
+                                <td>!nationalityName</td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Passport No</td>
+                                <td>:</td>
+                                <td>!ppnumber</td>
+                                <td class=" label">Passport Expiry Date</td>
+                                <td>:</td>
+                                <td>!ppExpiryDate</td>
+                            </tr>
+                            <tr class="c7">
+                                <td class="c8 label">Home Phone</td>
+                                <td>:</td>
+                                <td>!homePhone</td>
+                                <td class=" label">Mobile</td>
+                                <td>:</td>
+                                <td>!mobileNo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="c10" style="margin-top:10px;">
+                        <tr style="margin-top:3px;">
+                            <td colspan="6" class="c9 heading">
+                                Emergency Contact Person  & &nbsp; Phone Number
+                            </td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="width:19%;padding-left:7px" class=" label">Contact Person</td>
+                            <td>:</td>
+                            <td rowspan="3" valign="top" style="width:32%;padding-top:9px;padding-right:10px">
+                                !emerContactPerson
+                            </td>
+                            <td style="width:20%;" class=" label">Contact Number </td>
+                            <td>:</td>
+                            <td style="width:28%;">!emerContactNo</td>
+                        </tr>
+                    </table>
+
+                    <table class="c10" style="margin-top:10px;">
+
+                        <tr style="margin-top:3px;">
+                            <td colspan="6" class="c9 heading">
+                                Present Address
+                            </td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="width:19%;padding-left:7px" class=" label">Address</td>
+                            <td>:</td>
+                            <td valign="top" style="width:32%;padding-top:9px;padding-right:10px">
+                                !presAddress
+                            </td>
+                            <td style="width:20%;" class=" label">City </td>
+                            <td>:</td>
+                            <td style="width:28%;">!presAddrCityName</td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="width:19%;padding-left:7px" class="label">Residence Type</td>
+                            <td>:</td>
+                            <td>!presAddrResiTypeName</td>
+                            <td class=" label">Country</td>
+                            <td>:</td>
+                            <td>!presAddrCountryName</td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="padding-left:7px" class=" label">Nearest Landmark</td>
+                            <td>:</td>
+                            <td style="padding-right:10px">!presAddrLandMark</td>
+
+                        </tr>
+                    </table>
+
+                    <table class="c10">
+                        <tr>
+                            <td colspan="6" class="c9 heading">
+                                Permanent Address
+                            </td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="width:19%;padding-left:7px" class=" label">Address</td>
+                            <td>:</td>
+                            <td valign="top" style="width:32%;padding-top:9px;padding-right:10px">
+                                !permAddress
+                            </td>
+                            <td style="width:20%;" class=" label">City </td>
+                            <td>:</td>
+                            <td style="width:28%;">!permAddrCityName</td>
+                        </tr>
+
+                        <tr class="c7">
+                            <td style="width:19%;padding-left:7px" class=" label">Residence Type</td>
+                            <td>:</td>
+                            <td>!permAddrResiTypeName</td>
+                            <td class=" label">Country</td>
+                            <td>:</td>
+                            <td>!permAddrCountryName</td>
+                        </tr>
+
+                        <tr class="c7">
+                            <td style="padding-left:7px" class=" label">Nearest Landmark</td>
+                            <td>:</td>
+                            <td style="padding-right:10px">!permAddrLandMark</td>
+                            <td style="padding-left:7px" class=" label"></td>
+                            <td></td>
+                            <td style="padding-right:10px"></td>
+                        </tr>
+                    </table>
+
+
+                    <table class="c10">
+                        <tr>
+                            <td colspan="6" class="c9 heading">
+                                Name Of The Contact Person At This Address
+                            </td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="width:18%;padding-left:7px" class=" label">Person Name</td>
+                            <td>:</td>
+                            <td style="width:29%;">!emerContactPerson</td>
+                            <td style="width:19%" class=" label">Relationship</td>
+                            <td>:</td>
+                            <td style="width:28%">!emerContactRelation</td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="padding-left:7px" class=" label">Landline No</td>
+                            <td>:</td>
+                            <td>!homePhone</td>
+                            <td class=" label">Mobile No </td>
+                            <td>:</td>
+                            <td>!presAddrContactNo</td>
+                        </tr>
+                        <tr class="c7">
+                            <td style="padding-left:7px" class=" label">Residence Type</td>
+                            <td>:</td>
+                            <td>!presAddrResiTypeName</td>
+                            <td class=" label">Residing Since</td>
+                            <td>:</td>
+                            <td>!presAddrResiSince</td>
+                        </tr>
+
+                        <tr class="c7">
+                            <td colspan="6" style="padding-left:7px">
+                                !presAddrPrefTimeForVerification
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <table cellspacing="0" class="employee">
+                        <tr>
+                            <td colspan="8" class="c9 heading">
+                                Employment Information
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-title">Emp Name</td>
+                            <td class="table-title">Location</td>
+                            <td class="table-title">Country</td>
+                            <td class="table-title">City</td>
+                            <td class="table-title">Start Date</td>
+                            <td class="table-title">Relieving Date</td>
+                            <td class="table-title">Emp ID</td>
+                            <td class="table-title">Cur Working</td>
+                        </tr>
+                        !employementRecords
+
+                    </table>
+
+                    <table cellspacing="0" class="employee">
+                        <tr>
+                            <td colspan="6" class="c9 heading">
+                                Educational Credentials
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Qualification</td>
+                            <td class="table-title">Specialization</td>
+                            <td class="table-title">Board / University</td>
+                            <td class="table-title">From</td>
+                            <td class="table-title">To</td>
+                            <td class="table-title">Grade (%)</td>
+                        </tr>
+                        !educationRecords
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table class="c10" style="color:#333;">
+            <tr>
+                <td style="font-family: 'Open Sans', sans-serif;font-size:16px;text-align:center;">
+                    Information release form
+                    <br />
+                    <span style="font-size:14px">
+                        To whomsoever it may concern:
+                    </span>
+                </td>
+            </tr>
+            <tr style="font-family: 'Open Sans', sans-serif;font-size:14px;color:#333;margin-top:20px;margin-top:20px">
+                <td style="padding-top:15px;">
+                    <table style="width:100%;font-family: 'Open Sans', sans-serif;margin-top:1px;">
+                        <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;text-align:center">
+                            <td style="vertical-align:top">
+                                I,
+                            </td>
+                            <td style="padding-top: 10px;">
+                                <p style="display: block;border-top: 1px solid #f1f3f6;">
+                                    __________________________________
+                                </p>
+                                <p>
+                                    First Name
+                                </p>
+                            </td>
+                            <td style="padding-top: 10px;">
+                                <p style="display: block;border-top: 1px solid #f1f3f6;">
+                                    ____________________________
+                                </p>
+                                <p>
+                                    Middle Name
+                                </p>
+                            </td>
+                            <td style="padding-top: 10px;">
+                                <p style="display: block;border-top: 1px solid #f1f3f6;">
+                                    ____________________________
+                                </p>
+                                <p>
+                                    Last Name
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <table style="width:100%;font-family: 'Open Sans', sans-serif;margin-top:1px;">
+                        <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333;padding-bottom:15px;">
+                            <td colspan="2" style="padding-top:20px;text-align:justify;padding-bottom:25px;">
+                                I hereby authorize ParamInfo or their representatives to verify information presented on
+                                my employment application /resume
+                                and to procure an investigative report or consumer report for that purpose. I hereby
+                                grant authority for the bearer of this
+                                letter to access or be provided with full details
+                            </td>
+                        </tr>
+                        <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333;line-height:22px;color:#333;padding-top:20px;">
+                            <td valign="top" style="width:3%;padding: 0;">
+                                <span style="font-size:25px;font-weight:bold">&bull;</span>
+                            </td>
+                            <td style="font-family: 'Open Sans', sans-serif; text-align: justify;">
+                                <span style="margin-top: 0px; padding: 0px;">
+                                    Of my previous employment record held by any company or business for whom I previously
+                                    worked. This
+                                    information should include the dates of employment; the nature of the position held,
+                                    [details of my salary upon
+                                    departure] and an appraisal of my performance, capabilities and character. In addition,
+                                    please provide any other
+                                    pertinent information requested by the individual presenting this authority. I hereby
+                                    release from liability all persons
+                                    or entities requesting or supplying such information.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333;margin-top:10px">
+                            <td valign="top" style="width:3%;padding: 0;">
+                                <span style="font-size:25px;font-weight:bold">&bull;</span>
+                            </td>
+                            <td style="text-align:justify;">
+                                <span style="margin-top: 0px; padding: 0px;">
+                                    My Qualification/Degree (Original of my
+                                    Certificates Attached)
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;line-height:22px;color:#333">
+                            <td valign="top" style="width:3%;padding: 0;">
+                                <span style="font-size:25px;font-weight:bold">&bull;</span>
+                            </td>
+                            <td style="text-align:justify;">
+                                <span style="margin-top: 0px; padding: 0px;">
+                                    In respect to my character from the
+                                    records maintained by local authorities
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>           
+            <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333">
+                <td style="padding-top:150px;">
+                    <table>
+                        <tr>
+                            <td>
+                                _______________________________________
+                                <br />
+                                <span style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333">Signature</span>
+                            </td>
+                            <td>
+                                _______________________________
+                                <br />
+                                <span style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333">DD/MM/YYYY</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table style="width:100%;">
+            <tr style="text-align:center;color:#333">
+                <td colspan="2" style="padding-bottom:20px;padding-top:0px;">
+                    <strong>Checklist</strong>
+                </td>
+            </tr>
+            <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333">
+                <td colspan="2" style="padding-bottom: 15px;">For Educational Verification:</td>
+            </tr>
+            <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333">
+                <td valign="top" style="width:2%;padding: 0;">
+                    <span style="font-size:25px;font-weight:bold;margin-top: 0px; padding: 0px;">&bull;</span>
+                </td>
+                <td style="text-align:justify;">
+                    <span style="margin-top: 0px; padding: 0px;">    Original and clear Photocopy of All Educational Certificates </span>
+                </td>
+            </tr>
+            <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333">
+                <td colspan="2" style="padding-bottom: 15px;">For Employment Verification:</td>
+            </tr>
+            <tr style="font-family: 'Open Sans', sans-serif;font-size:12px;color:#333">
+                <td valign="top" style="width:2%;padding: 0;">
+                    <span style="font-size:25px;font-weight:bold;margin-top: 0px; padding: 0px;">&bull;</span>
+                </td>
+                <td style="text-align:justify;">
+                    <span style="margin-top: 0px; padding: 0px;"> Original and clear photocopy of the Relieving/ Experience Certificates </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

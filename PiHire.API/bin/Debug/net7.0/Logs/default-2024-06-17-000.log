@@ -1,0 +1,46 @@
+﻿info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[UsingProfileAsKeyRepositoryWithDPAPI] @ 2024-06-17T10:31:14.3025531+05:30
+      User profile is available. Using 'C:\Users\vivek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-17T10:31:19.2775056+05:30
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-17T10:31:19.2784197+05:30
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0] @ 2024-06-17T10:31:19.2784847+05:30
+      Content root path: D:\work\piHIRE\PiHire.o\PiHire.API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:31:19.3698032+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/index.html - -
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[FailedToDeterminePort] @ 2024-06-17T10:31:19.8502534+05:30
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:31:21.4449918+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/index.html - - - 200 - text/html;charset=utf-8 2080.1456ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:31:21.5122314+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_vs/browserLink - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:31:21.5122314+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:31:21.5358602+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_framework/aspnetcore-browser-refresh.js - - - 200 13756 application/javascript;+charset=utf-8 22.7037ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:31:21.7078182+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 195.5837ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:31:21.8417043+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:31:22.8201394+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 978.4381ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:31:28.2673583+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:31:28.2930772+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - - - 404 - - 25.7722ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:32:15.6313620+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:32:15.6721902+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - - - 404 - - 41.8794ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:32:25.8532561+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:32:25.8598928+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - - - 404 - - 6.6396ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:32:26.8565294+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:32:26.8583340+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - - - 404 - - 1.7857ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1] @ 2024-06-17T10:32:41.7128298+05:30
+      Request starting HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2] @ 2024-06-17T10:32:41.7144918+05:30
+      Request finished HTTP/1.1 GET http://localhost:64821/api/v1/ClientView/GetClientSharedProfiles?BatchNo=ad7090ea-1230-40ae-9f06-3d7a9b2d564f - - - 404 - - 12.1500ms
