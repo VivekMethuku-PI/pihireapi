@@ -33,4 +33,4 @@ jobs:
 
     - name: Push Docker image
       run: |
-          docker push vivekmethuku2120/vivekbuild:latest
+          docker push vivekbuild:latest
