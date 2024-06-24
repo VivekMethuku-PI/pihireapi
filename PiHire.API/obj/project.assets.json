@@ -12148,18 +12148,18 @@
     },
     "PiHire.BAL/1.0.0": {
       "type": "project",
-      "path": "../PiHire.BAL/PiHire.BAL.csproj",
-      "msbuildProject": "../PiHire.BAL/PiHire.BAL.csproj"
+      "path": "../CommonfilesSubmodule/PiHire.BAL/PiHire.BAL.csproj",
+      "msbuildProject": "../CommonfilesSubmodule/PiHire.BAL/PiHire.BAL.csproj"
     },
     "PiHire.DAL/1.0.0": {
       "type": "project",
-      "path": "../PiHire.DAL/PiHire.DAL.csproj",
-      "msbuildProject": "../PiHire.DAL/PiHire.DAL.csproj"
+      "path": "../CommonfilesSubmodule/PiHire.DAL/PiHire.DAL.csproj",
+      "msbuildProject": "../CommonfilesSubmodule/PiHire.DAL/PiHire.DAL.csproj"
     },
     "PiHire.Utilities/1.0.0": {
       "type": "project",
-      "path": "../PiHire.Utilities/PiHire.Utilities.csproj",
-      "msbuildProject": "../PiHire.Utilities/PiHire.Utilities.csproj"
+      "path": "../CommonfilesSubmodule/PiHire.Utilities/PiHire.Utilities.csproj",
+      "msbuildProject": "../CommonfilesSubmodule/PiHire.Utilities/PiHire.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12191,11 +12191,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\piHIRE\\PiHire.o\\PiHire.API\\PiHire.API.csproj",
+      "projectUniqueName": "D:\\api\\PiHire.o\\PiHire.API\\PiHire.API.csproj",
       "projectName": "PiHire.API",
-      "projectPath": "D:\\work\\piHIRE\\PiHire.o\\PiHire.API\\PiHire.API.csproj",
+      "projectPath": "D:\\api\\PiHire.o\\PiHire.API\\PiHire.API.csproj",
       "packagesPath": "C:\\Users\\vivek\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\piHIRE\\PiHire.o\\PiHire.API\\obj\\",
+      "outputPath": "D:\\api\\PiHire.o\\PiHire.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12216,8 +12216,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\work\\piHIRE\\PiHire.o\\PiHire.BAL\\PiHire.BAL.csproj": {
-              "projectPath": "D:\\work\\piHIRE\\PiHire.o\\PiHire.BAL\\PiHire.BAL.csproj"
+            "D:\\api\\PiHire.o\\CommonfilesSubmodule\\PiHire.BAL\\PiHire.BAL.csproj": {
+              "projectPath": "D:\\api\\PiHire.o\\CommonfilesSubmodule\\PiHire.BAL\\PiHire.BAL.csproj"
             }
           }
         }
