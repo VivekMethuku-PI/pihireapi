@@ -14,5 +14,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Initialize submodules
+      run: |
+          git submodule update --init --recursive
+
+      # Optionally, you can pull the latest commit of each submodule
+      # before proceeding with the Docker build
+    - name: Update submodules to latest commit
+      run: |
+          git submodule update --remote --merge
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
